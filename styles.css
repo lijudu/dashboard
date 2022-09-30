@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+    background-color: aquamarine;
+    grid-row: 1/3;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.header {
+    background-color: plum;
+}
+
+.header ul {
+    list-style-type: none;
+}
+
+.main {
+    background-color: orange;
+    grid-column: 2/3;
+}
+
+.dashboard, .sideSettings, .heyThere, .headerOptions {
+    margin: 0;
+}
+
+

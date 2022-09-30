@@ -28,24 +28,31 @@ html, body {
 .header {
     background-color: plum;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     align-items: center;
 }
 
 .headerOptions {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding-left: 0;
 }
 
-.header ul {
-    list-style-type: none;
+.headerBTN {
+    width: 90px;
+    height: 35px;
+    border: 1px solid white;
+    background: white;
+    border-radius: 10px;
 }
+
 
 .main {
     background-color: orange;
     grid-column: 2/3;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 80% 20%;
     grid-template-rows: repeat(2, 1fr);
     padding-top: 10px;
     padding-left: 20px;
@@ -55,8 +62,20 @@ html, body {
     margin: 0;
 }
 
-.articles {
+.articlesContainer {
     grid-row: span 2;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.card {
+    background-color: white;
+    height: 100px;
+    width: 150px;
 }
 
 .annoucements {

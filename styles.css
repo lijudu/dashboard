@@ -1,4 +1,5 @@
 html, body {
+    font-family: "comfortaa", helvetica, sans-serif; 
     margin: 0;
 }
 
@@ -9,12 +10,14 @@ html, body {
 }
 
 .sidebar {
-    background-color: aquamarine;
+    background-color: #BF9270;
     grid-row: 1/3;
     height: 100vh;
     display: grid; 
     grid-template-rows: 10% 45% 45%;
     padding-top: 20px;
+    color: white;
+    font-weight: bold;
 }
 
 .sidebar ul {
@@ -26,10 +29,12 @@ html, body {
 }
 
 .header {
-    background-color: plum;
+    background-color: #FFEDDB;
     display: grid;
     grid-template-columns: 40% 60%;
     align-items: center;
+    box-shadow: 0 5px 15px #BF9270;
+    position: relative;
 }
 
 .headerOptions {
@@ -42,14 +47,18 @@ html, body {
 .headerBTN {
     width: 90px;
     height: 35px;
-    border: 1px solid white;
-    background: white;
+    border: 1px none;
+    background: #BF9270;
     border-radius: 10px;
+    color: white;
 }
 
+.headerBTN:active {
+    transform: translateY(3px);
+}
 
 .main {
-    background-color: orange;
+    background-color: #EDCDBB;
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 80% 20%;
@@ -66,25 +75,47 @@ html, body {
     grid-row: span 2;
 }
 
+.articles {
+    padding-top: 20px;
+}
+
 .cardContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
 }
 
 .card {
-    background-color: white;
-    height: 100px;
-    width: 150px;
+    background-color: #fcf4eb;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 5px 8px #BF9270;
 }
 
-.annoucements {
+.annoucementsContainer {
     grid-row: 1/2;
+    display: grid;
+    gap: 10px;
 }
 
-.trending {
+.announcements {
+    padding-top: 20px;
+}
+
+.annouceList, .trendingList {
+    background-color: #fcf4eb;
+    margin-top: 16px;
+    margin-right: 20px;
+    height: 200px;
+    text-align: center;
+    box-shadow: 0 5px 8px #BF9270;
+}
+.trendingContainer {
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
-
+.trending {
+    padding-top: 10px;
+}

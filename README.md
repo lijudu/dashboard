@@ -17,7 +17,7 @@ For the main-content, use more grids to lay out the projects, announcements and 
 Fill out some dummy content and placeholder images so you can position all of your grid items.✅
 
 Step 4: Gather Assets
-Once you have your grid layout complete you can either recreate the dashboard example above or style your own design.
-Check out some color palettes from Tailwind.
-All of the icons and more can be downloaded as SVGs from Material Design Icons.
-Choose your own fonts! The design example uses Roboto, which is available with Google fonts.
+Once you have your grid layout complete you can either recreate the dashboard example above or style your own design.✅
+Check out some color palettes from Tailwind.✅
+All of the icons and more can be downloaded as SVGs from Material Design Icons.✅
+Choose your own fonts! The design example uses Roboto, which is available with Google fonts.✅
